@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="515.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.dictionary.SearchPageController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="706.0" pickOnBounds="true">
+         <image>
+            <Image url="@dictionary-book-learn-learning.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="searchPage" minHeight="300.0" minWidth="155.0" prefHeight="506.0" prefWidth="696.0">
+         <children>
+            <AnchorPane fx:id="searchPanel" layoutX="30.0" layoutY="17.0" prefHeight="287.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <TextField fx:id="searchWordField" layoutX="12.0" layoutY="21.0" onKeyPressed="#checkIfEnter" onKeyTyped="#searchWordField" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: lightgray;" />
+                  <Button fx:id="searchWordButton" layoutX="156.0" layoutY="21.0" mnemonicParsing="false" onAction="#searchWordButton" opacity="0.5" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: black;" text="search" textFill="WHITE" />
+                  <ListView fx:id="suggestionBox" fixedCellSize="-10.0" layoutX="12.0" layoutY="71.0" onKeyPressed="#suggestionBoxPressed" onMouseClicked="#suggestionBoxClicked" prefHeight="201.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-background-radius: 5;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="definitionPanel" layoutX="307.0" layoutY="19.0" prefHeight="467.0" prefWidth="379.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <TextArea fx:id="searchedWordDefnition" editable="false" layoutX="8.0" layoutY="44.0" prefHeight="415.0" prefWidth="365.0" style="-fx-background-radius: 15; -fx-border-radius: 8;" />
+                  <Button fx:id="copyButton" layoutX="200.0" layoutY="18.0" minHeight="43.0" minWidth="53.0" mnemonicParsing="false" onAction="#copyButton" opacity="0.5" prefHeight="51.0" prefWidth="53.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" />
+                  <Button fx:id="addToBookMarkButton" layoutX="275.0" layoutY="18.0" minHeight="43.0" minWidth="53.0" mnemonicParsing="false" onAction="#addToBookMarkButton" opacity="0.5" prefHeight="51.0" prefWidth="53.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" />
+                  <ImageView fx:id="copyButtonImageView" fitHeight="46.0" fitWidth="36.0" layoutX="209.0" layoutY="26.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@content_copy_48dp_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="addtoBookmarkImageView" fitHeight="36.0" fitWidth="36.0" layoutX="284.0" layoutY="26.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bookmark_add_48dp_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</StackPane>
