@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: rgb(51,49,49);
+    background: linear-gradient(90deg, rgba(51,49,49,1) 30%, rgba(54,54,54,1) 57%, rgba(54,54,54,1) 97%);
+}
+
+p {
+    
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.container{
+    margin: 60px auto 100px;
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    
+    
+}
+
+.inputArea{
+    background-color: dimgray;
+    height: 50px;
+    display: flex;
+    
+    padding: 10px 0px 10px 0px;
+    
+    background-color: rgb(83, 81, 81);
+    border-radius: 7px 7px 0 0;
+
+}
+
+.taskContainer{
+    background-color: rgb(83, 81, 81);
+    border-radius: 0  0 7px 7px;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.taskName{
+    border-radius: 8px;
+    border-color: orange;
+    height: 100%;
+    padding-left: 5px;
+
+}
+.taskName::placeholder , .taskDescription::placeholder{
+    color: orange;
+}
+.taskDescription{
+    border-radius: 8px;
+    border-color: orange;
+    height: 100%;
+    padding-left: 5px;
+
+}
+
+.taskName:focus , .taskDescription:focus {
+    border-color: rgb(255, 179, 0); /* Example: Change border color when input is focused */
+    /* box-shadow: 0 0 5px rgba(255, 119, 0, 0.5); Example: Add a box shadow when input is focused */
+    color: orange;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 4px;
+}
+
+.add{
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    width: 80px;
+    font-size: 20px;
+    
+    border: none;
+    margin-left: 10%;
+   
+}
+
+.taskList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: rgb(83, 81, 81); */
+    justify-items: center;
+    align-items: center;
+}
+
+h2{
+    color: rgb(205, 134, 1);
+}
+.parag{
+    display: flex;
+   
+   
+    flex-direction: column;
+    margin-left: 20px;
+   width: 350px;
+}
+.parag span{
+    font-size: 15px;
+ 
+}
+
+.completed{
+    border: solid;
+    color: aqua;
+    border-color: rgb(0, 194, 194);
+    border-radius: 25px;
+    height: 40px;
+    width: 82px;
+    font-size: 12px;
+    
+}
+.delete{
+    color: red;
+    border-color: red;
+    border-radius: 25px;
+    height: 40px;
+    width: 80px;
+    font-size: 12px;
+    margin-right: 5%;
+}

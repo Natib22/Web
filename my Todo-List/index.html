@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>My TO-DO-LIST</p>
+
+ <div class="container">
+    <div class="inputArea">
+        <div class="inputContainer">
+            <input type="text" id="taskName" placeholder="Task Name" class="taskName"/>
+            <input type = "text" id="taskDescription" placeholder="Task Description" class="taskDescription"/>
+
+        </div>
+        
+        <button class="add" onclick="addTask()">&plus;</button>
+    </div>
+    <div class="taskContainer" id="taskContainer">
+
+        <!-- <div id="taskList" class="taskList">
+            <div class="parag"> <h2>Task 1</h2>   <span>Clean the dishes</span></div>
+            <button class="completed">Completed</button>
+            <button class="delete">Delete</button>
+        </div> -->
+
+    </div>
+    
+   
+ </div>
+ <script src="main.js"></script>
+</body>
+</html>
