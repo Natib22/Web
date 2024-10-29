@@ -1,4 +1,4 @@
-Here’s a structured README file for your JavaFX application, along with instructions on how to run it:
+
 
 ---
 
