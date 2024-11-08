@@ -126,4 +126,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-This README provides a comprehensive overview and step-by-step guide to set up, run, and use your application.
+
